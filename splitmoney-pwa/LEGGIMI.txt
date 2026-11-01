@@ -1,0 +1,9 @@
+SplitMoney PWA - istruzioni
+1. Carica TUTTA la cartella (index.html, manifest.webmanifest, sw.js, icons/) sulla radice di un hosting HTTPS:
+   GitHub Pages, Netlify, Cloudflare Pages o Vercel (gratuiti). Una sottocartella va bene.
+2. Apri l'indirizzo dallo smartphone:
+   - Android/Chrome: menu ⋮ > "Installa app" (o "Aggiungi a schermata Home").
+   - iPhone/Safari: Condividi > "Aggiungi alla schermata Home".
+3. Prova in locale: python3 -m http.server 8000  e apri http://localhost:8000
+Aggiornamenti: dopo ogni modifica cambia VERSION in sw.js, altrimenti i telefoni restano sulla versione in cache.
+I dati restano nel browser del dispositivo (localStorage): niente sincronizzazione tra dispositivi.
